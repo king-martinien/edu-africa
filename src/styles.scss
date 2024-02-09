@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/assets/fonts/proxima-nova/proximanova-light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/assets/fonts/proxima-nova/proximanova-regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/assets/fonts/proxima-nova/proximanova-bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/assets/fonts/proxima-nova/proximanova-extrabold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/assets/fonts/proxima-nova/proximanova-black.otf");
+  font-weight: 900;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Proxima Nova", sans-serif;
+  }
+}
