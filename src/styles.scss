@@ -35,6 +35,17 @@
 
 @layer base {
   html {
+    @apply text-default selection:text-white selection:bg-primary;
     font-family: "Proxima Nova", sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 md:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-primary-400 bg-clip-text text-opacity-0 text-primary hover:from-primary-400 hover:to-primary transition-all duration-300;
   }
 }

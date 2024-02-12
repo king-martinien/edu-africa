@@ -1,0 +1,30 @@
+<header class="shadow-btn shadow-primary-400">
+  <div class="container py-4 md:py-5 flex items-center justify-between">
+    <app-logo hasMediaQuery="true"/>
+    <nav class="hidden lg:block">
+      <ul class="flex items-center gap-6">
+        <li>
+          <app-nav-link to="home" label="home" [isColor]="true"/>
+        </li>
+        <li>
+          <app-nav-link to="courses" label="Courses" [isColor]="true"/>
+        </li>
+        <li>
+          <app-nav-link to="Blog" label="blog" [isColor]="true"/>
+        </li>
+        <li>
+          <app-nav-link to="about-us" label="about us" [isColor]="true"/>
+        </li>
+
+        <li>
+          <app-nav-link to="contact-us" label="contact us" [isColor]="true"/>
+        </li>
+      </ul>
+    </nav>
+    <div class="hidden lg:flex items-center gap-2">
+      <app-cart-button/>
+      <app-button label="Be A Contributor" type="link" to="auth/become-contributor"/>
+      <app-button label="Log in" type="link" to="auth/login"/>
+    </div>
+  </div>
+</header>
