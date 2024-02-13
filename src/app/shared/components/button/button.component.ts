@@ -17,14 +17,14 @@ export class ButtonComponent implements AfterViewInit {
   @Input() type: "button" | "link" = "button";
   @Input() to = "home";
   @Input() color: "white" | "primary" = "primary";
-  defaultClass = 'inline-block text-center px-6 py-3 rounded-full font-bold min-w-[120px] shadow-primary-400/10 shadow-btn'
+  defaultClass = 'inline-block text-center px-6 py-3 rounded-full font-bold min-w-[150px] shadow-primary-400/10 shadow-btn'
 
 
   ngAfterViewInit() {
     this.defaultClass +=
       this.color === 'primary'
         ? " bg-gradient-to-r from-primary to-primary-400 text-white"
-        : " bg-white border border-primary-400 text-primary-400";
+        : " bg-white border border-primary-400 text-primary";
     this.cdRef.detectChanges()
   }
 

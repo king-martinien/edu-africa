@@ -38,6 +38,10 @@
     @apply text-default selection:text-white selection:bg-primary;
     font-family: "Proxima Nova", sans-serif;
   }
+
+  img {
+    @apply select-none pointer-events-none;
+  }
 }
 
 @layer components {
