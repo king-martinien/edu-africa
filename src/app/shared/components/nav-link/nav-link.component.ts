@@ -6,6 +6,7 @@ import {Component, Input} from '@angular/core';
     `
       <a [routerLink]="to"
          [class]="customClass"
+         class="hover:from-primary-400 hover:to-primary"
          [ngClass]="{'md:hover:text-primary': !isColor, 'bg-gradient-primary':isColor}"
          [innerHTML]="case==='UPPER'? (label|uppercase): case === 'TITLE' ? (label|titlecase) : label">
       </a>

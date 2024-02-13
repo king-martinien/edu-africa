@@ -24,7 +24,7 @@ export class ButtonComponent implements AfterViewInit {
     this.defaultClass +=
       this.color === 'primary'
         ? " bg-gradient-to-r from-primary to-primary-400 text-white"
-        : " bg-white border border-primary-400 text-primary";
+        : " bg-white text-primary";
     this.cdRef.detectChanges()
   }
 
