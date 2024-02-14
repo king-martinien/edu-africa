@@ -4,9 +4,10 @@ import {AfterViewInit, ChangeDetectorRef, Component, inject, Input} from '@angul
   selector: 'app-button',
   template:
     `
-      <button [class]="defaultClass" *ngIf="type==='button';else link" [innerHTML]="label"></button>
+      <button [class]="customClass" [ngClass]="defaultClass" *ngIf="type==='button';else link"
+              [innerHTML]="label"></button>
       <ng-template #link>
-        <a [class]="defaultClass" [routerLink]="to" [innerHTML]="label">{{ label }}</a>
+        <a [class]="customClass" [ngClass]="defaultClass" [routerLink]="to" [innerHTML]="label">{{ label }}</a>
       </ng-template>
     `
 })
@@ -17,6 +18,7 @@ export class ButtonComponent implements AfterViewInit {
   @Input() type: "button" | "link" = "button";
   @Input() to = "home";
   @Input() color: "white" | "primary" = "primary";
+  @Input() customClass = "";
   defaultClass = 'inline-block text-center px-6 py-3 rounded-full font-bold min-w-[150px] shadow-primary-400/10 shadow-btn'
 
 
