@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
+  important: true,
   theme: {
     extend: {
       boxShadow: {
         'btn': '0 12px 35px 0'
+      },
+      backgroundImage: {
+        'stories': "url('/assets/images/bg-stories.png')",
       }
     },
     colors: {

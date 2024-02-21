@@ -1,4 +1,4 @@
-<div class="bg-gradient-to-r from-primary to-primary-400">
+<div class="bg-gradient-primary-r">
   <div class="container relative py-20 md:min-h-[690px] flex flex-col items-center gap-14 md:gap-10 md:flex-row">
     <div class="text-white flex flex-col gap-4 md:flex-1">
       <h1 class="font-black text-3xl leading-[2.5rem] lg:text-5xl md:leading-[3rem]">Get access to unlimited educational
@@ -49,7 +49,7 @@
 </div>
 
 <div class="bg-primary-100 relative overflow-hidden">
-  <div class="container pb-20 pt-10 flex justify-end">
+  <div class="container pb-20 lg:pb-24 pt-10 flex justify-end">
     <div class="md:w-1/2">
       <h3 class="text-4xl md:text-5xl md:gap-3 gap-1 mb-3 md:mb-10 capitalize flex flex-col font-light text-primary">
         <span>Learn a Skill.</span>
@@ -83,17 +83,36 @@
   </div>
 </div>
 
-<div>
-  <div class="container text-center py-14 lg:py-20">
-    <h1 class="text-4xl bg-gradient-primary mb-5 font-black">Courses</h1>
-    <div class="mb-5 text-lg">
-      Yo! This section is coming soon 🤭
+<div class="bg-gradient-primary-l">
+  <div class="bg-stories bg-no-repeat bg-contain">
+    <div class="container flex flex-col gap-10 py-16 lg:py-24 lg:flex-row lg:items-center">
+      <div class="flex flex-col gap-5 lg:w-1/3 lg:gap-10">
+        <h3 class="font-black text-3xl lg:text-4xl leading-[2.5rem] lg:leading-[3rem]">Success Stories From Our Students
+          WorldWide!</h3>
+        <p class="text-lg font-medium">Edu Africa is an online education platform that delivers video courses, programs
+          and resources
+          for
+          Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone looking to
+          pursue a career in digital marketing, Accounting, Web development, Programming. Multimedia and CAD design.
+        </p>
+        <app-button color="white" type="link" to="discover" label="Discover"/>
+      </div>
+      <div class="relative lg:w-2/3">
+        <img ngSrc="assets/images/media-placeholder.png" width="804" height="677" alt="Media placeholder" priority>
+      </div>
     </div>
-    <app-button type="link" to="discover" label="Discover"/>
   </div>
 </div>
 
-<div class="bg-gradient-to-l from-primary to-primary-400 text-white">
+<div class="container text-center py-14 lg:py-20">
+  <h1 class="text-4xl text-gradient-primary mb-5 font-black">Courses</h1>
+  <div class="mb-5 text-lg">
+    Yo! This section is coming soon 🤭
+  </div>
+  <app-button type="link" to="discover" label="Discover"/>
+</div>
+
+<div class="bg-gradient-primary-l">
   <div class="container py-20 flex flex-col gap-10 md:flex-row md:justify-center md:items-start">
     <div class="flex flex-col items-center justify-center text-center md:flex-1">
       <div class="relative mb-4">
@@ -126,7 +145,25 @@
   </div>
 </div>
 
-<div class="relative overflow-hidden">
+<div class="py-14 lg:py-20">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="text-4xl text-gradient-primary mb-3 font-black">What Students Say</h1>
+      <div class="mb-5 text-lg">
+        Don't just take our word for it, hear what our students have to say about Edu Africa
+      </div>
+    </div>
+  </div>
+  <div class="mt-10">
+    <swiper-container class="py-5" appSwiper [config]="swiperConfig">
+      <swiper-slide class="w-[350px] lg:w-[450px]" *ngFor="let testimonial of testimonials()">
+        <app-testimonial [testimonial]="testimonial"></app-testimonial>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</div>
+
+<div class="relative">
   <div class="container py-20">
     <img class="absolute -left-10 w-24 -top-10 lg:w-auto" ngSrc="assets/images/shape-pricing.png" alt="Rectangle image"
          width="182"
@@ -134,7 +171,7 @@
          priority>
     <div class="flex relative z-10 flex-col md:flex-row gap-10 lg:gap-14 items-center justify-center">
       <div class="text-center md:text-left">
-        <h3 class="bg-gradient-primary font-black mb-4 lg:mb-5 text-3xl lg:text-5xl lg:leading-tight">Our <br> Pricing
+        <h3 class="text-gradient-primary font-black mb-4 lg:mb-5 text-3xl lg:text-5xl lg:leading-tight">Our <br> Pricing
           Plans
         </h3>
         <p class="mb-4 max-w-[350px] lg:max-w-[370px] lg:mb-5 lg:text-lg">
@@ -150,7 +187,7 @@
           <div class="relative">
             <span class="absolute top-0 left-0 text-xl font-semibold">$</span>
             <h4>
-              <span class="font-black text-9xl bg-gradient-primary">15</span>
+              <span class="font-black text-9xl text-gradient-primary">15</span>
               <span class="text-base text-default font-semibold">/monthly</span>
             </h4>
           </div>
@@ -295,7 +332,7 @@
           <div class="relative">
             <span class="absolute top-0 left-0 text-xl font-semibold">$</span>
             <h4>
-              <span class="font-black text-9xl bg-gradient-primary">120</span>
+              <span class="font-black text-9xl text-gradient-primary">120</span>
               <span class="text-base text-default font-semibold">/annually</span>
             </h4>
           </div>
@@ -444,7 +481,7 @@
   <div class="container py-16 lg:py-24">
     <div class="flex flex-col md:flex-row md:items-center gap-10 justify-between max-w-5xl mx-auto">
       <div class="md:flex-1">
-        <h3 class="mb-3 font-black text-4xl bg-gradient-primary">Subscribe to Our Newsletter</h3>
+        <h3 class="mb-3 font-black text-4xl text-gradient-primary">Subscribe to Our Newsletter</h3>
         <p>Get exclusive discounts and latest news delivered to your inbox for free!</p>
       </div>
       <form class="w-full md:flex-[2]">
@@ -461,7 +498,8 @@
   <div class="relative overflow-hidden">
     <div class="container py-10 lg:py-20 flex items-center justify-end">
       <div class="md:w-1/2">
-        <h3 class="bg-gradient-primary font-black text-4xl lg:text-5xl lg:leading-tight mb-5 md:mb-10">Let’s Build <br>
+        <h3 class="text-gradient-primary font-black text-4xl lg:text-5xl lg:leading-tight mb-5 md:mb-10">Let’s Build
+          <br>
           Something <br>
           Great
           Together</h3>

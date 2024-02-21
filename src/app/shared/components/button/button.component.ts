@@ -4,11 +4,11 @@ import {AfterViewInit, ChangeDetectorRef, Component, inject, Input} from '@angul
   selector: 'app-button',
   template:
     `
-      <button [class]="customClass" [ngClass]="defaultClass" *ngIf="type==='button';else link"
-              [innerHTML]="label"></button>
-      <ng-template #link>
+      @if (type === 'button') {
+        <button [class]="customClass" [ngClass]="defaultClass" [innerHTML]="label"></button>
+      } @else {
         <a [class]="customClass" [ngClass]="defaultClass" [routerLink]="to" [innerHTML]="label">{{ label }}</a>
-      </ng-template>
+      }
     `
 })
 export class ButtonComponent implements AfterViewInit {

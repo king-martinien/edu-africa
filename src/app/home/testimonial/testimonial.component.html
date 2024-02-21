@@ -1,0 +1,17 @@
+<div class="pagination cursor-pointer border border-light-gray  rounded overflow-hidden p-8">
+  <div class="mb-5">
+    <svg width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0 17.0548C0 23.2357 4.00428 26.7785 8.4454 26.7785C12.5225 26.7785 16.0171 23.2357 16.0171 18.8638C16.0171 14.6427 13.1777 11.8537 9.68308 11.8537C8.88223 11.8537 8.15417 12.0045 7.79015 12.1552C8.73662 9.29086 12.0857 5.97425 14.4154 4.91896L9.10064 0.47168C3.42184 4.61745 0 10.4215 0 17.0548ZM17.9829 17.0548C17.9829 23.2357 21.9872 26.7785 26.4283 26.7785C30.5054 26.7785 34 23.2357 34 18.8638C34 14.6427 31.1606 11.8537 27.6659 11.8537C26.8651 11.8537 26.137 12.0045 25.773 12.1552C26.7195 9.29086 30.0685 5.97425 32.3983 4.91896L27.0835 0.47168C21.4047 4.61745 17.9829 10.4215 17.9829 17.0548Z"
+        fill="#5C5C5C"/>
+    </svg>
+  </div>
+  <p class="mb-5 line-clamp-4 h-[100px]">{{ testimonial.content }}</p>
+  <div class="flex items-center gap-3">
+    <div class="w-16 h-16 bg-light-gray rounded-full"></div>
+    <div class="flex flex-col">
+      <h3 class="text-lg font-black">{{ testimonial.user.name }}</h3>
+      <div>{{ testimonial.user.category }}</div>
+    </div>
+  </div>
+</div>
