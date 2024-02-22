@@ -20,7 +20,7 @@ module.exports = {
       "black": "#000000",
       "light-gray": "#EFEFEF",
       "dark-gray": "#212121",
-      "field-border": "#EFEFEF"
+      "error": "#F14646"
     }
   },
   plugins: [],

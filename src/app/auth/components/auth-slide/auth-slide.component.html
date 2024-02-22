@@ -1,0 +1,8 @@
+<div class="w-full h-full relative">
+  <img class="object-cover" [ngSrc]="imageUrl" alt="children with books" fill priority>
+  <div
+    class="absolute flex flex-col gap-2 items-center justify-center bottom-20 left-1/2 -translate-x-1/2 text-white max-w-[350px] text-center font-semibold">
+    <img ngSrc="assets/svgs/idea.svg" alt="Idea icon" width="41" height="37" priority>
+    <p class="leading-[1.25rem]">{{ text }}</p>
+  </div>
+</div>

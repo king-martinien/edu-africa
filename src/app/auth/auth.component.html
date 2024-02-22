@@ -1,0 +1,42 @@
+<div class="flex flex-col lg:flex-row h-screen">
+  <div class="flex-[1.2] relative">
+    <div class="bg-primary-100 h-screen relative overflow-hidden">
+      <div class="absolute z-10 top-0 inset-x-0">
+        <img class="object-center object-cover h-32" ngSrc="assets/images/auth-line-bulles.png" alt="illustration"
+             width="1327" height="275" priority>
+      </div>
+      <div class="absolute -right-48 -bottom-52 md:-right-40 md:-bottom-44">
+        <svg width="324" height="316" viewBox="0 0 324 316" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9.20703 315.358L172.468 151.657L323.585 0.133018L96.5844 8.54372C41.1395 10.598 -2.03363 57.3981 0.381756 112.829L9.20703 315.358Z"
+            fill="url(#paint0_linear_1_724)"/>
+          <defs>
+            <linearGradient id="paint0_linear_1_724" x1="332.122" y1="293.944" x2="-35.7262" y2="194.207"
+                            gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FFC000" offset="0"/>
+              <stop offset="1" stop-color="#FF8A00"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+      </div>
+      <div class="h-screen flex items-center justify-center">
+        <div class="w-full px-4 md:px-0 z-20 relative max-w-[430px]">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden relative bg-default/25 lg:block lg:flex-1">
+    <swiper-container [config]="swiperConfig" appSwiper class="h-full">
+      <swiper-slide class="w-full">
+        <app-auth-slide imageUrl="assets/images/auth-slide.jpg"
+                        text="Do you know you can easily choose your mode of learning on this platform? Hover aboard to know more"/>
+      </swiper-slide>
+      <swiper-slide class="w-full">
+        <app-auth-slide imageUrl="assets/images/auth-slide2.jpg"
+                        text="Do you know you can also become a contributor and earn side cash? It’s easy! create an account to unlock a milestone."/>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</div>

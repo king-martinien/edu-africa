@@ -4,6 +4,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import {RouterLink} from "@angular/router";
 import { NavLinkComponent } from './components/nav-link/nav-link.component';
 import { ButtonComponent } from './components/button/button.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 
 
@@ -11,13 +12,15 @@ import { ButtonComponent } from './components/button/button.component';
   declarations: [
     LogoComponent,
     NavLinkComponent,
-    ButtonComponent
+    ButtonComponent,
+    LoaderComponent
   ],
-    exports: [
-        LogoComponent,
-        NavLinkComponent,
-        ButtonComponent
-    ],
+  exports: [
+    LogoComponent,
+    NavLinkComponent,
+    ButtonComponent,
+    LoaderComponent
+  ],
   imports: [
     CommonModule,
     NgOptimizedImage,

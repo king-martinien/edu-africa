@@ -1,5 +1,6 @@
 import {AfterViewInit, Directive, ElementRef, Input} from '@angular/core';
 import {SwiperOptions} from "swiper/types";
+import {SwiperContainer} from "swiper/swiper-element";
 
 @Directive({
   selector: '[appSwiper]'
@@ -8,7 +9,7 @@ export class SwiperDirective implements AfterViewInit {
   @Input('config')
   config?: SwiperOptions;
 
-  constructor(private element: ElementRef<HTMLElement>) {
+  constructor(private element: ElementRef<SwiperContainer>) {
   }
 
   ngAfterViewInit(): void {

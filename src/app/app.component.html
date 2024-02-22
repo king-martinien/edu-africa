@@ -1,3 +1,7 @@
-<app-header/>
+@if (!isAuthPage()) {
+  <app-header/>
+}
 <router-outlet></router-outlet>
-<app-footer/>
+@if (!isAuthPage()) {
+  <app-footer/>
+}
